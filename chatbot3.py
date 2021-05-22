@@ -19,9 +19,6 @@ driver=webdriver.Chrome(path)
 
 @app.route('/walk',methods=['POST']) #json으로 들어온 사용자 요청을 보고 판단
 def walk():
-    #content = request.get_json()
-    #content = content['userRequest']
-    #content = content['utterance'] #사용자가 전송한 실제 메시지
 
     req = request.get_json()
     params = req['action']['detailParams']
